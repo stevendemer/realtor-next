@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
         <Box textAlign="center" p="5" color="gray.600" borderTop="1px" borderColor="gray.500">
-            2021 Realtor, &reg; Inc.
+            2021 Realtor website made by Steven Demer, &reg; Inc.
         </Box>
     );
 }
