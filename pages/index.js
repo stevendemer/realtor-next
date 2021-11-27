@@ -10,9 +10,9 @@ const Banner = ({ imageSrc, purpose, title, title2, description, buttonText, lin
     <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="10">
       <Image src={imageSrc} width={500} height={300} alt="Banner" /> 
       <Box p="5">
-        <Text color="gray.500" fontSize="sm" fontWeight="medium">{purpose}</Text>
-        <Text color="gray.500" fontSize="3xl" fontWeight="bold">{title}<br/>{title2}</Text>
-        <Text fontSize="lg" paddingBottom="3" color="gray.700">{description}</Text>
+        <Text color="gray.400" fontSize="sm" fontWeight="medium">{purpose}</Text>
+        <Text color="gray.600" fontSize="3xl" fontWeight="bold">{title}<br/>{title2}</Text>
+        <Text fontSize="xl" paddingBottom="3" color="gray.600">{description}</Text>
         <Button fontSize="xl">
           <Link href={linkName}>{buttonText}</Link>
         </Button>

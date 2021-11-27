@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Link from 'next/link';
 import {
     Menu,
@@ -7,8 +8,12 @@ import {
     Box,
     Spacer,
     IconButton,
-    MenuList
+    MenuList,
+    Button,
+    ColorModeScript,
+    useColorMode
 } from '@chakra-ui/react';
+
 import {
     FcMenu,
     FcHome,
@@ -16,18 +21,29 @@ import {
 } from 'react-icons/fc';
 import { BsSearch } from 'react-icons/bs';
 import { FiKey } from 'react-icons/fi';
+import { IoMoonSharp } from 'react-icons/io5';
+import { HiOutlineSun, HiSun } from 'react-icons/hi';
 
 
 const NavBar = () => {
 
+    const {colorMode, toggleColorMode} = useColorMode();
+
     return (
-        <Flex p="2" borderBottom="1px" borderColor="gray.200">
+        <Flex width="100"  p="2" borderBottom="1px" borderColor="gray.200">
             <Box fontSize="3xl" color="blue.400" fontWeight="bold">
                 <Link href="/" paddingLeft="2">Realtor</Link>
             </Box>
             <Spacer />
             <Box>
-                <Menu>
+                <Button
+                    as={IconButton}
+                    icon={<HiOutlineSun />}
+                    onClick={toggleColorMode}
+                    bg="black.600"
+                    mx="4"
+                />
+                    <Menu>
                     <MenuButton as={IconButton} icon={<FcMenu />} variant="outlined" color="red.400" />
                     <MenuList>
                         <Link href="/" passHref>

@@ -24,7 +24,7 @@ const Search = ({ properties }) => {
         <Box>
             <Flex 
                 cursor="pointer"
-                bg="gray.100"
+                bg="gray.200"
                 borderBottom="1px"
                 borderColor="gray.200"
                 p="2"
@@ -34,8 +34,8 @@ const Search = ({ properties }) => {
                 alignItems="center"
                 onClick={() => setSearchFilters((prevFilters) => !prevFilters)}
             >
-                <Text>Search Property By Filters</Text>
-                <Icon paddingLeft="2" w="7" as={BsFilter} />
+                <Text color="red.700" >Search Property By Filters</Text>
+                <Icon paddingLeft="2" color="black" w="7" as={BsFilter} />
             </Flex>
             {searchFilters && <SearchFilters />}
             <Text fontSize="2xl" p="4" fontWeight="bold">
