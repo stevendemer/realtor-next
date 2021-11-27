@@ -40,11 +40,13 @@ const NavBar = () => {
                     as={IconButton}
                     icon={<HiOutlineSun />}
                     onClick={toggleColorMode}
-                    bg="black.600"
+                    variant="outlined"
+                    color="yellow"
+                    bgGradient="linear(to-r, #C33764, #1D2671)"
                     mx="4"
                 />
                     <Menu>
-                    <MenuButton as={IconButton} icon={<FcMenu />} variant="outlined" color="red.400" />
+                    <MenuButton as={IconButton} icon={<FcMenu />} variant="outlined" color="red.600" />
                     <MenuList>
                         <Link href="/" passHref>
                             <MenuItem icon={<FcHome />}>Home</MenuItem>
