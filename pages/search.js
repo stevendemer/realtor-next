@@ -27,6 +27,8 @@ const Search = ({ properties }) => {
                 bg="gray.200"
                 borderBottom="1px"
                 borderColor="gray.200"
+                borderRadius="200"
+                my="2"
                 p="2"
                 fontWeight="black"
                 fontSize="lg"

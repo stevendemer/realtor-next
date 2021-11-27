@@ -29,7 +29,7 @@ const SearchFilters = () => {
     }
 
     return (
-        <Flex bg="gray.100"  color="purple.500" fontSize="20"  p="4" justifyContent="center" flexWrap="wrap">
+        <Flex bg="gray.200" borderRadius="55" color="purple.500" fontSize="20"  p="4" justifyContent="center" flexWrap="wrap">
             {filters.map((filter) => (
                 <Box key={filter.queryName}>
                     <Select onChange={(e) => searchProperties([filter.queryName])}
