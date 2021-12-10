@@ -4,7 +4,7 @@
 
 
 ## Technologies
-Project is created with 
+Project is created with:
 *ReactJS using the Nextjs framework (Version 12.0)
 *The styling of the app is made with Chakra UI (Version 1.7.3) and react-icons
 *The backend functions through the Bayut RAPID API which provides all the info about the properties
@@ -14,5 +14,5 @@ Project is created with
 To run this project locally on your machine using npm / yarn: 
 ```
   $ npm run dev ( for development )
-  $npm run build ( for production)
+  $ npm run build ( for production)
 ```
