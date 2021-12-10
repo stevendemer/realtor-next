@@ -16,3 +16,7 @@ To run this project locally on your machine using npm / yarn:
   $ npm run dev ( for development )
   $ npm run build ( for production)
 ```
+
+
+#### Hosting was made available with Vercel 
+``` https://realtor-app-eight.vercel.app/ ```
